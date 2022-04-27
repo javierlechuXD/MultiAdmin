@@ -78,7 +78,7 @@ namespace MultiAdmin.Config
 
 			try
 			{
-				if (removeQuotes && newValue.StartsWith("\"") && newValue.EndsWith("\""))
+				if (removeQuotes && newValue.StartsWith("\\"") && newValue.EndsWith("\""))
 					return newValue.Substring(1, newValue.Length - 2);
 			}
 			catch (Exception e)
